@@ -27,8 +27,8 @@ import javax.annotation.PostConstruct;
 
 public class CtripMQService implements MQService {
 
-  private static final org.apache.commons.lang.time.FastDateFormat
-      TIMESTAMP_FORMAT = org.apache.commons.lang.time.FastDateFormat.getInstance("yyyy-MM-dd hh:mm:ss");
+  private static final org.apache.commons.lang3.time.FastDateFormat
+      TIMESTAMP_FORMAT = org.apache.commons.lang3.time.FastDateFormat.getInstance("yyyy-MM-dd hh:mm:ss");
   private static final String CONFIG_PUBLISH_NOTIFY_TO_NOC_TOPIC = "ops.noc.record.created";
 
   private Gson gson = new Gson();

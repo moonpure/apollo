@@ -26,3 +26,23 @@ target
 # git
 *.orig
 
+/.idea/*
+*/target/
+*/out/
+*.project
+*.classpath
+*.settings
+*.mvn
+*.springBeans
+.project
+shopxx-b2b2c.iml
+.metadata
+
+/target/
+.DS_Store
+*/.DS_Store
+**/.DS_Store
+/logs/
+*/logs/
+
+

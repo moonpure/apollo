@@ -83,7 +83,7 @@ public class ConfigPropertySourceTest {
     doAnswer(new Answer() {
       @Override
       public Object answer(InvocationOnMock invocation) throws Throwable {
-        listeners.add(invocation.getArgumentAt(0, ConfigChangeListener.class));
+        listeners.add(invocation.getArgument(0, ConfigChangeListener.class));
 
         return Void.class;
       }

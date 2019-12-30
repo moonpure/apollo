@@ -5,7 +5,7 @@ import com.google.common.base.Joiner;
 import com.ctrip.framework.apollo.core.utils.ByteUtil;
 import com.ctrip.framework.apollo.core.utils.MachineUtil;
 
-import org.apache.commons.lang.time.FastDateFormat;
+import org.apache.commons.lang3.time.FastDateFormat;
 
 import java.security.SecureRandom;
 import java.util.Date;

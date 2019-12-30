@@ -103,7 +103,7 @@ public class JavaConfigAnnotationTest extends AbstractSpringIntegrationTest {
     doAnswer(new Answer() {
       @Override
       public Object answer(InvocationOnMock invocation) throws Throwable {
-        applicationListeners.add(invocation.getArgumentAt(0, ConfigChangeListener.class));
+        applicationListeners.add(invocation.getArgument(0, ConfigChangeListener.class));
 
         return Void.class;
       }
@@ -112,7 +112,7 @@ public class JavaConfigAnnotationTest extends AbstractSpringIntegrationTest {
     doAnswer(new Answer() {
       @Override
       public Object answer(InvocationOnMock invocation) throws Throwable {
-        fxApolloListeners.add(invocation.getArgumentAt(0, ConfigChangeListener.class));
+        fxApolloListeners.add(invocation.getArgument(0, ConfigChangeListener.class));
 
         return Void.class;
       }
@@ -176,7 +176,7 @@ public class JavaConfigAnnotationTest extends AbstractSpringIntegrationTest {
     doAnswer(new Answer() {
       @Override
       public Object answer(InvocationOnMock invocation) throws Throwable {
-        applicationListeners.add(invocation.getArgumentAt(0, ConfigChangeListener.class));
+        applicationListeners.add(invocation.getArgument(0, ConfigChangeListener.class));
 
         return Void.class;
       }
@@ -185,7 +185,7 @@ public class JavaConfigAnnotationTest extends AbstractSpringIntegrationTest {
     doAnswer(new Answer() {
       @Override
       public Object answer(InvocationOnMock invocation) throws Throwable {
-        fxApolloListeners.add(invocation.getArgumentAt(0, ConfigChangeListener.class));
+        fxApolloListeners.add(invocation.getArgument(0, ConfigChangeListener.class));
 
         return Void.class;
       }

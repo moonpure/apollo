@@ -17,7 +17,7 @@ import java.util.TreeSet;
 import javax.naming.Name;
 import javax.naming.directory.Attribute;
 import javax.naming.ldap.LdapName;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.ldap.core.AttributesMapper;

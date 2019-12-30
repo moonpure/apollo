@@ -158,10 +158,9 @@ public class YamlParser {
         throw new ParserException("while parsing MappingNode", node.getStartMark(), ex.getMessage(), node.getEndMark());
       }
     }
-
     @Override
-    protected Map<Object, Object> createDefaultMap() {
-      final Map<Object, Object> delegate = super.createDefaultMap();
+    protected Map<Object, Object> createDefaultMap(int initSize) {
+      final Map<Object, Object> delegate = super.createDefaultMap(initSize);
       return new AbstractMap<Object, Object>() {
         @Override
         public Object put(Object key, Object value) {
