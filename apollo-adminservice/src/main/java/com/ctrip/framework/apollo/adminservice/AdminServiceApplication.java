@@ -14,7 +14,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableAspectJAutoProxy
 @EnableEurekaClient
 @Configuration
-@PropertySource(value = {"classpath:adminservice.properties"})
+@PropertySource(value = {"classpath:local/adminservice.properties"})
 @EnableAutoConfiguration
 @EnableTransactionManagement
 @ComponentScan(basePackageClasses = {ApolloCommonConfig.class,
