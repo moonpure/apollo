@@ -22,6 +22,16 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+			<exclusions>
+				<exclusion>
+					<artifactId>hystrix-core</artifactId>
+					<groupId>com.netflix.hystrix</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>HdrHistogram</artifactId>
+					<groupId>org.hdrhistogram</groupId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<!-- end of eureka -->
 		<dependency>
