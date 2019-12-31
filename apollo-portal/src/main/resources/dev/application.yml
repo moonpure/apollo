@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: apollo-portal
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://39.105.162.135/ApolloPortalDB?useUnicode=true&characterEncoding=UTF-8&useOldAliasMetadataBehavior=true&autoReconnect=true&serverTimezone=Asia/Shanghai&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: TestBicon@123
+  jpa:
+    properties:
+      hibernate:
+        query:
+          plan_cache_max_size: 192 # limit query plan cache max size
+server:
+  port: 8763
+  compression:
+    enabled: true
+  tomcat:
+    use-relative-redirects: true
+ctrip:
+  appid: 100003173

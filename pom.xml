@@ -381,7 +381,7 @@
 		<profile>
 			<id>devtwo</id>
 			<properties>
-				<package.environment>localtwo</package.environment>
+				<package.environment>devtwo</package.environment>
 			</properties>
 		</profile>
 		<profile>

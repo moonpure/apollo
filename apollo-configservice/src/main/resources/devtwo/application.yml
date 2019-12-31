@@ -3,9 +3,9 @@ spring:
     name: apollo-configservice
   publicId: 182.92.234.157
   datasource:
-     url: jdbc:mysql://39.105.162.135/ApolloConfigDB?useUnicode=true&characterEncoding=UTF-8&useOldAliasMetadataBehavior=true&autoReconnect=true&serverTimezone=Asia/Shanghai&zeroDateTimeBehavior=convertToNull
+     url: jdbc:mysql://182.92.234.157/ApolloConfigDB?useUnicode=true&characterEncoding=UTF-8&useOldAliasMetadataBehavior=true&autoReconnect=true&serverTimezone=Asia/Shanghai&zeroDateTimeBehavior=convertToNull
      username: root
-     password: TestBicon@123
+     password: Tojoyshare2019
   cloud:
     inetutils:
       preferredNetworks: ${spring.cloud.client.ipAddress}

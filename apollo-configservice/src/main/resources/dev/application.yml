@@ -1,11 +1,11 @@
 spring:
   application:
-    name: apollo-adminservice
-  publicId: 182.92.234.157
+    name: apollo-configservice
+  publicId: 39.105.162.135
   datasource:
-     url: jdbc:mysql://182.92.234.157/ApolloConfigDB?useUnicode=true&characterEncoding=UTF-8&useOldAliasMetadataBehavior=true&autoReconnect=true&serverTimezone=Asia/Shanghai&zeroDateTimeBehavior=convertToNull
+     url: jdbc:mysql://39.105.162.135/ApolloConfigDB?useUnicode=true&characterEncoding=UTF-8&useOldAliasMetadataBehavior=true&autoReconnect=true&serverTimezone=Asia/Shanghai&zeroDateTimeBehavior=convertToNull
      username: root
-     password: Tojoyshare2019
+     password: TestBicon@123
   cloud:
     inetutils:
       preferredNetworks: ${spring.cloud.client.ipAddress}
@@ -13,13 +13,13 @@ spring:
       ipAddress: ${spring.publicId}
       hostname: ${spring.publicId}
 ctrip:
-  appid: 100003172
+  appid: 100003171
 server:
-  port: 8762
+  port: 8761
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://182.92.234.157:8760/eureka/
+      defaultZone: http://39.105.162.135:8760/eureka/
   instance:
     ipAddress: ${spring.publicId}
     preferIpAddress: true

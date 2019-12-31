@@ -4,9 +4,12 @@ eureka:
   instance:
     hostname: 39.105.162.135
   server:
-     enable-self-preservation: false#关闭自我保护模式（缺省为打开）
+    #关闭自我保护模式（缺省为打开）
+     enable-self-preservation: false
   client:
-    registerWithEureka: false #是否将自身注册到eureka
-    fetchRegistry: false #是否抓取注册信息
+    #是否将自身注册到eureka
+    registerWithEureka: false
+    #是否抓取注册信息
+    fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
