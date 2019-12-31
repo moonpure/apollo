@@ -296,6 +296,7 @@
 					<exclude>test/*</exclude>
 					<exclude>pro/*</exclude>
 					<exclude>local/*</exclude>
+					<exclude>devtwo/*</exclude>
 				</excludes>
 				<filtering>true</filtering>
 			</resource>
@@ -318,6 +319,7 @@
 					<exclude>test/*</exclude>
 					<exclude>pro/*</exclude>
 					<exclude>local/*</exclude>
+					<exclude>devtwo/*</exclude>
 				</excludes>
 				<filtering>true</filtering>
 			</testResource>
@@ -374,6 +376,12 @@
 			<id>local</id>
 			<properties>
 				<package.environment>local</package.environment>
+			</properties>
+		</profile>
+		<profile>
+			<id>devtwo</id>
+			<properties>
+				<package.environment>localtwo</package.environment>
 			</properties>
 		</profile>
 		<profile>

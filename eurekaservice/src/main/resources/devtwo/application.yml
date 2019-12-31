@@ -1,0 +1,12 @@
+server:
+  port: 8760
+eureka:
+  instance:
+    hostname: 182.92.234.157
+  server:
+     enable-self-preservation: false#关闭自我保护模式（缺省为打开）
+  client:
+    registerWithEureka: false #是否将自身注册到eureka
+    fetchRegistry: false #是否抓取注册信息
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

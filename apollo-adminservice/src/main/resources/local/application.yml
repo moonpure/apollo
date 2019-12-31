@@ -1,6 +1,6 @@
 spring:
   application:
-    name: apollo-configservice
+    name: apollo-adminservice
   publicId: 39.105.162.135
   datasource:
      url: jdbc:mysql://39.105.162.135/ApolloConfigDB?useUnicode=true&characterEncoding=UTF-8&useOldAliasMetadataBehavior=true&autoReconnect=true&serverTimezone=Asia/Shanghai&zeroDateTimeBehavior=convertToNull
@@ -13,9 +13,9 @@ spring:
       ipAddress: ${spring.publicId}
       hostname: ${spring.publicId}
 ctrip:
-  appid: 100003171
+  appid: 100003172
 server:
-  port: 8761
+  port: 8762
 eureka:
   client:
     serviceUrl:
