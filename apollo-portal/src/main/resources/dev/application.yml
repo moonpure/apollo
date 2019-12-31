@@ -19,4 +19,8 @@ server:
   tomcat:
     use-relative-redirects: true
 ctrip:
-  appid: 100003173
+  appId: 100003173
+management:
+  health:
+    defaults:
+      enabled: false
